@@ -1,0 +1,2 @@
+class NoteKeyword < ApplicationRecord
+end
