@@ -1,10 +1,8 @@
 Rails.application.routes.draw do
 
-  get 'public/index'
-
-  get 'public/search'
-
-  get 'public/result'
+  get '/index' => 'public#index'
+  get '/search' => 'public#search'
+  get '/result' => 'public#result'
 
   resources :keywords
   resources :notes
