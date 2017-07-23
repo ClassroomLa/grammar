@@ -1,0 +1,12 @@
+{
+  "name": "Grammar",
+  "description": "Grammar Note system",
+  "keywords": [
+    "grammar"
+  ],
+  "scripts": {
+    "dokku": {
+      "postdeploy": "bundle exec rake db:migrate"
+    }
+  }
+}
