@@ -2,9 +2,10 @@
 
 <h1>Notes</h1>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
+      <th>ID</th>
       <th>Date</th>
       <th>Category</th>
       <th>Keywords</th>
@@ -15,7 +16,8 @@
 
   <tbody>
     <% @notes.each do |note| %>
-      <tr>
+      <tr scope="row">
+        <td><%= note.id %></td>
         <td><%= note.date %></td>
         <td><% note.keywords.each do |k| %> <%= k.name %> <% end %></td>
         <td><%= note.category_id %></td>
